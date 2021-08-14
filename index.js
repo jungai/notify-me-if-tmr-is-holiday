@@ -10,7 +10,11 @@ import "dotenv/config";
   const holiday = dayList.filter((day) => isSameDay(currentDay, day.date));
   const isHoliday = holiday.length === 1;
 
-  if (!isHoliday) return;
+  if (!isHoliday) {
+    process.exit();
+
+    return;
+  };
 
   //   connect to discord
   const hook = new Discord.WebhookClient(getBotId(), getBotToken());
