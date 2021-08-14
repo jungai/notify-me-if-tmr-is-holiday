@@ -1,0 +1,23 @@
+{
+  "name": "notify-me-if-tmr-is-holiday",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungai/notify-me-if-tmr-is-holiday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungai/notify-me-if-tmr-is-holiday/issues"
+  },
+  "homepage": "https://github.com/jungai/notify-me-if-tmr-is-holiday#readme",
+  "dependencies": {
+    "date-fns": "^2.23.0"
+  }
+}
