@@ -5,7 +5,7 @@
   "type": "module",
   "module": "index.js",
   "scripts": {
-    "run": "node index.js"
+    "build": "node --experimental-json-modules index.js"
   },
   "repository": {
     "type": "git",
