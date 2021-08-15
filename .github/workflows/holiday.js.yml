@@ -27,7 +27,7 @@ jobs:
         BOT_ID: ${{ secrets.BOT_ID }}
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
     - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.10.0
-          run_install: true
+      with:
+        version: 6.10.0
+        run_install: true
     - run: pnpm run task
