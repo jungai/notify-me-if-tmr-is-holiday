@@ -9,13 +9,13 @@ export function normalizeData(days) {
 }
 
 export function getEnv(name) {
-  const value = process.env[name]
+  const value = process.env[name];
 
   if (!value) {
-    throw new Error(`env ${name} is required`)
+    throw new Error(`env ${name} is required`);
   }
 
-  return value
+  return value;
 }
 
 export function getBotId() {
