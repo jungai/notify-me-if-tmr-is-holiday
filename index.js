@@ -22,6 +22,7 @@ import "dotenv/config";
 
   // embed things
   const embed = new Discord.MessageEmbed()
+    .setTimestamp(new Date())
     .setTitle("วันหยุด")
     .setColor("#2ecc71")
     .addFields({
