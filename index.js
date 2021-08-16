@@ -22,10 +22,10 @@ import "dotenv/config";
 
   // embed things
   const embed = new Discord.MessageEmbed()
-    .setTitle("พรุ่งนี้วันหยุด")
+    .setTitle("วันหยุด")
     .setColor("#2ecc71")
     .addFields({
-      name: "ชื่อวัน",
+      name: "📍",
       value: holiday[0].name,
     });
 
