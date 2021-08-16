@@ -8,7 +8,7 @@ import "dotenv/config";
   const dayList = getDays();
 
   const holiday = dayList.filter((day) => isSameDay(currentDay, day.date));
-
+  
   // TODO: stack holiday
   const isHoliday = holiday.length === 1;
 
