@@ -12,10 +12,7 @@ import "dotenv/config";
   // TODO: stack holiday
   const isHoliday = holiday.length === 1;
 
-  if (!isHoliday) {
-    process.exit();
-
-  };
+  if (!isHoliday) return;
 
   //   connect to discord
   const hook = new Discord.WebhookClient(getBotId(), getBotToken());
