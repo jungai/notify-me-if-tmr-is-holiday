@@ -20,7 +20,7 @@ import "dotenv/config";
   // embed things
   const embed = new Discord.MessageEmbed()
     .setTimestamp(new Date())
-    .setTitle("วันหยุด")
+    .setTitle("พรุ่งนี้วันหยุด")
     .setColor("#2ecc71")
     .addFields({
       name: "📍",
