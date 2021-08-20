@@ -30,6 +30,6 @@ jobs:
     - name: create .env
       run: |
         touch .env
-        echo BOT_ID=${{ secrets.BOT_ID_2 }} >> .env
-        echo BOT_TOKEN=${{ secrets.BOT_TOKEN_2 }} >> .env
+        echo BOT_ID=${{ secrets.BOT_ID }} >> .env
+        echo BOT_TOKEN=${{ secrets.BOT_TOKEN }} >> .env
     - run: pnpm run task
