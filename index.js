@@ -7,7 +7,7 @@ import "dotenv/config";
   const currentDay = new Date();
   const dayList = getDays();
 
-  const holiday = dayList.filter((day) => isSameDay(currentDay, day.date));
+  const holiday = dayList.filter((day) => isTomorrow(day.date));
   
   // TODO: stack holiday
   const isHoliday = holiday.length === 1;
