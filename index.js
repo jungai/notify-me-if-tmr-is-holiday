@@ -1,4 +1,4 @@
-import { isSameDay } from "date-fns";
+import { isTomorrow } from "date-fns";
 import { getDays, getBotToken, getBotId } from "./utils.mjs";
 import Discord from "discord.js";
 import "dotenv/config";
@@ -8,7 +8,7 @@ import "dotenv/config";
   const dayList = getDays();
 
   const holiday = dayList.filter((day) => isTomorrow(day.date));
-  
+
   // TODO: stack holiday
   const isHoliday = holiday.length === 1;
 
@@ -28,7 +28,7 @@ import "dotenv/config";
     });
 
   // notify
-  await hook.send("แจ้งเตือน", { embeds: [embed] });
+  await hook.send("", { embeds: [embed] });
 
   process.exit();
 })();
