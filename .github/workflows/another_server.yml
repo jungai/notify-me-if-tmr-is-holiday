@@ -4,7 +4,7 @@
 name: Another-Server
 on:
   schedule:
-    - cron:  '0 14 * * *'
+    - cron:  '15 14 * * *'
 
 jobs:
   build:
