@@ -1,21 +1,24 @@
-import { isTomorrow } from "date-fns";
+import "dotenv/config";
+import { isSameDay } from "date-fns";
 import { getDays, getBotToken, getBotId } from "./utils.mjs";
 import Discord from "discord.js";
-import "dotenv/config";
 
 (async () => {
   const currentDay = new Date();
   const dayList = getDays();
 
   const holiday = dayList.filter((day) => isTomorrow(day.date));
-
+  
   // TODO: stack holiday
   const isHoliday = holiday.length === 1;
 
   if (!isHoliday) return;
 
   //   connect to discord
-  const hook = new Discord.WebhookClient(getBotId(), getBotToken());
+  const hook = new Discord.WebhookClient({
+    id: getBotId(),
+    token: getBotToken(),
+  });
 
   // embed things
   const embed = new Discord.MessageEmbed()
@@ -28,7 +31,5 @@ import "dotenv/config";
     });
 
   // notify
-  await hook.send("", { embeds: [embed] });
-
-  process.exit();
+  await hook.send({ embeds: [embed] });
 })();
