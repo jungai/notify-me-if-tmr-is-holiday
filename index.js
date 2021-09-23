@@ -25,6 +25,7 @@ import Discord from "discord.js";
     .setTimestamp(new Date())
     .setTitle("พรุ่งนี้วันหยุด")
     .setColor("#2ecc71")
+    .setThumbnail("https://media.giphy.com/media/CSFLh6Km02NwUj5tnm/giphy.gif?cid=ecf05e47ny6klb1rmocj1x9qr7nob0f7wiwf29l6p6foul9v&rid=giphy.gif&ct=g")
     .addFields({
       name: "📍",
       value: holiday[0].name,
