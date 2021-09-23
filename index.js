@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { isSameDay } from "date-fns";
+import { isTomorrow } from "date-fns";
 import { getDays, getBotToken, getBotId } from "./utils.mjs";
 import Discord from "discord.js";
 
